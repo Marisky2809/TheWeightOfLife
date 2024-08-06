@@ -16,6 +16,7 @@ public class Disparar : MonoBehaviour
     public AudioClip[] OverDrive = new AudioClip[4];
     public AudioClip[] Chorus = new AudioClip[4];
     public AudioClip[] Distortion = new AudioClip[4];
+    public AudioClip Trasteo;
 
     public Bala bala1;
     public Bala bala2;
@@ -124,11 +125,11 @@ public class Disparar : MonoBehaviour
             bala3.Farias = Rodrigo;
             bala4.Farias = Rodrigo;
             bala5.Farias = Rodrigo;
-            bala1.velocidad = 0.3f;
-            bala2.velocidad = 0.3f;
-            bala3.velocidad = 0.3f;
-            bala4.velocidad = 0.3f;
-            bala5.velocidad = 0.3f;
+            bala1.velocidad = 14f;
+            bala2.velocidad = 14f;
+            bala3.velocidad = 14f;
+            bala4.velocidad = 14f;
+            bala5.velocidad = 14f;
             Auxbala = Instantiate(balas[sistemaGuardado.partida.iterador], miraTemporal.transform.position, Quaternion.identity);
             Auxbala.transform.SetParent(miraTemporal.transform);
             Auxbala.transform.rotation = centro.transform.rotation;
@@ -159,19 +160,19 @@ public class Disparar : MonoBehaviour
             bala3.Farias = Rodrigo;
             bala4.Farias = Rodrigo;
             bala5.Farias = Rodrigo;
-            bala1.velocidad = 0.08f;
-            bala2.velocidad = 0.08f;
-            bala3.velocidad = 0.08f;
-            bala4.velocidad = 0.08f;
-            bala5.velocidad = 0.08f;
+            bala1.velocidad = 5f;
+            bala2.velocidad = 5f;
+            bala3.velocidad = 5f;
+            bala4.velocidad = 5f;
+            bala5.velocidad = 5f;
             Auxbala = Instantiate(balas[sistemaGuardado.partida.iterador], miraTemporal.transform.position, Quaternion.identity);
             Auxbala.transform.SetParent(miraTemporal.transform);
             Auxbala.transform.rotation = centro.transform.rotation;
             Auxbala.transform.localScale = new Vector3(5f, 5f, 5f);
             disparando = true;
 
-            //SonidosBajo.Instance.ejecutarSonido(NotasBajo[sistemaGuardado.partida.iterador, metronomo.Acorde]);
-
+            SonidosError.Instance.ejecutarSonido(NotasBajo[sistemaGuardado.partida.iterador, metronomo.Acorde]);
+            SonidosDanio.Instance.ejecutarSonido(Trasteo);
             Destroy(miraTemporal, 2f);
             Destroy(centroTemporal, 2f);
             if (Auxbala != null)

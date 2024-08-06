@@ -12,7 +12,10 @@ public class CambiaPedal : MonoBehaviour
     {
         if (context.performed)
         {
-            ControladorSonido.Instance.ejecutarSonido(pedal);
+            if(sistemaGuardado.partida.minimo < sistemaGuardado.partida.maximo)
+            {
+                ControladorSonido.Instance.ejecutarSonido(pedal);
+            }
             if (sistemaGuardado.partida.iterador < sistemaGuardado.partida.maximo)
             {
                 sistemaGuardado.partida.iterador++;
@@ -27,7 +30,10 @@ public class CambiaPedal : MonoBehaviour
     {
         if (context.performed)
         {
-            ControladorSonido.Instance.ejecutarSonido(pedal);
+            if (sistemaGuardado.partida.minimo < sistemaGuardado.partida.maximo)
+            {
+                ControladorSonido.Instance.ejecutarSonido(pedal);
+            }
             if (sistemaGuardado.partida.iterador > sistemaGuardado.partida.minimo)
             {
                 sistemaGuardado.partida.iterador--;

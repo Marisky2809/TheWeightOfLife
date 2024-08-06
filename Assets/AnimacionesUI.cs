@@ -15,6 +15,7 @@ public class AnimacionesUI : MonoBehaviour
     public GameObject opcionesFirst;
     public GameObject principalFirst;
     public GameObject back;
+    public GameObject back2;
    
 
     private void Start()
@@ -29,8 +30,6 @@ public class AnimacionesUI : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(opcionesFirst);
         LeanTween.moveX(menuExtra.GetComponent<RectTransform>(), 560, 0.5f);
-
-
     }
 
     public void DesactivarOpciones()
@@ -41,10 +40,16 @@ public class AnimacionesUI : MonoBehaviour
         LeanTween.moveX(EconderExtra.GetComponent<RectTransform>(), 1400, 0.5f);
 
     }
+
+    public void ActivarCreditos()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(back2);
+    }
     public void CreditosRegresar()
     {
         EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(back);
+        EventSystem.current.SetSelectedGameObject(principalFirst);
     }
 
 }

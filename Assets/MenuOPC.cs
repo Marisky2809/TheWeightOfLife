@@ -18,7 +18,7 @@ public class MenuOPC : MonoBehaviour
     private void Start()
     {
         slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
-        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, slider.value);
+        panelBrillo.color = new Color(panelBrillo.color.r, panelBrillo.color.g, panelBrillo.color.b, 0);
     }
 
     public void PantallaCom(bool pantallaComp)
@@ -40,6 +40,6 @@ public class MenuOPC : MonoBehaviour
     {
         sliderValue = valor;
         PlayerPrefs.SetFloat("brillo", sliderValue);
-        panelBrillo.color = new Color(panelBrillo.color.r,panelBrillo.color.g,panelBrillo.color.b, slider.value);
+        panelBrillo.color = new Color(panelBrillo.color.r,panelBrillo.color.g,panelBrillo.color.b, 1 - slider.value);
     }
 }

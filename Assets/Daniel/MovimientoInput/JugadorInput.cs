@@ -8,6 +8,8 @@ using UnityEngine.Rendering;
 
 public class JugadorInput : MonoBehaviour
 {
+    public bool izquierda = false;
+
     public SistemaGuardado sistemaGuardado;
     public grappling grappling;
 
@@ -87,6 +89,7 @@ public class JugadorInput : MonoBehaviour
         //Espejear Sprite
         if (horizontal < 0 && guitarrazo.puedeGolpear)
         {
+            izquierda = true;
             spriteRenderer.flipX = true;
             RotarArma.rotable = true;
             if (velocidad != 0)
@@ -103,6 +106,7 @@ public class JugadorInput : MonoBehaviour
         }
         else if (horizontal > 0 && guitarrazo.puedeGolpear)
         {
+            izquierda = false;
             spriteRenderer.flipX = false;
             RotarArma.rotable = false;
             if (velocidad != 0)

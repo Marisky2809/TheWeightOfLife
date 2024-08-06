@@ -16,6 +16,7 @@ public class grappling : MonoBehaviour
     private Vector3 grapplePoint;
     private DistanceJoint2D joint;
 
+    public GameObject mirilla;
     public GameObject puntero;
     public GameObject ancla;
 
@@ -25,7 +26,6 @@ public class grappling : MonoBehaviour
         joint.enabled = false;
         rope.enabled = false;
     }
-
     public void actionGrappling(InputAction.CallbackContext context)
     {
         if (context.performed && sistemaGuardado.partida.Grappling && jugador.puedeSaltar == false)
@@ -65,6 +65,15 @@ public class grappling : MonoBehaviour
         if (rope.enabled == true)
         {
             rope.SetPosition(1, transform.position);
+        }
+
+        if(sistemaGuardado.partida.Grappling && jugador.puedeSaltar == false && rope.enabled == false)
+        {
+            mirilla.SetActive(true);
+        }
+        else
+        {
+            mirilla.SetActive(false);
         }
     }
 }

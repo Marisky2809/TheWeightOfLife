@@ -7,6 +7,16 @@ using UnityEngine.Windows;
 
 public class RadialMenu : MonoBehaviour
 {
+    [SerializeField] private AudioClip EncenderGuitarra;
+    [SerializeField] private AudioClip EncenderBajo;
+
+    public Guitarrazo guitarrazo;
+    public GameObject fuegoBajo;
+    public GameObject fuegoGuitarra;
+
+    public GameObject fuegoBajo2;
+    public GameObject fuegoGuitarra2;
+
     public RotarArma arma;
     public SistemaGuardado sistemaGuardado;
 
@@ -33,6 +43,7 @@ public class RadialMenu : MonoBehaviour
 
     public GameObject guitarraUI;
     public GameObject bajoUI;
+    public GameObject microUI;
     void Start()
     {
         bajoActivo = true;
@@ -45,28 +56,54 @@ public class RadialMenu : MonoBehaviour
         if (bajoActivo && sistemaGuardado.partida.Guitarra && puedeCambiar)
         {
             cambioGuitarra();
+            ControladorSonido.Instance.ejecutarSonido(EncenderGuitarra);
         }
         else if(bajoActivo && sistemaGuardado.partida.Guitarra == false){
             Debug.Log("No se puede hacer nada, carnal");
         }
-        else if(bajoActivo == false && puedeCambiar)
+        else if(bajoActivo == false && puedeCambiar && guitarrazo.puedeGolpear)
         {
             cambioBajo();
+            ControladorSonido.Instance.ejecutarSonido(EncenderBajo);
         }
     }
     private void cambioGuitarra()
     {
+        fuegoGuitarra2 = Instantiate(fuegoGuitarra);
+        VicPosicion = VictoriaBajo.transform.position;
+        fuegoGuitarra2.transform.position = VicPosicion;
+        if (bajo.rb.gravityScale < 0)
+        {
+            fuegoGuitarra2.GetComponent<SpriteRenderer>().flipY = true;
+        }
+
+
         bajoActivo = false;
         PuntoCamara.transform.SetParent(null);
         StartCoroutine(ActivarGuitarra());
         guitarraUI.SetActive(true);
+        if (sistemaGuardado.partida.Grappling)
+        {
+            microUI.SetActive(true);
+        }
         bajoUI.SetActive(false);
     }
     private void cambioBajo()
     {
+        
+
+        fuegoBajo2 = Instantiate(fuegoBajo);
+        VicPosicion = VictoriaGuitarra.transform.position;
+        fuegoBajo2.transform.position = VicPosicion;
+        if (guitarra.rb.gravityScale < 0)
+        {
+            fuegoBajo2.GetComponent<SpriteRenderer>().flipY = true;
+        }
+
         bajoActivo = true;
         PuntoCamara.transform.SetParent(null);
         StartCoroutine(ActivarBajo());
+
         guitarraUI.SetActive(false);
         bajoUI.SetActive(true);
     }
@@ -96,7 +133,11 @@ public class RadialMenu : MonoBehaviour
         VicPosicion.x = PuntoCamara.transform.position.x;
         PuntoCamara.transform.SetParent(VictoriaGuitarra.transform);
         Debug.Log("Sí se hizo");
-        yield return new WaitForSeconds(1.5f);
+
+        yield return new WaitForSeconds(0.6f);
+        Destroy(fuegoGuitarra2);
+
+        yield return new WaitForSeconds(0.5f);
         puedeCambiar = true;
     }
 
@@ -104,6 +145,7 @@ public class RadialMenu : MonoBehaviour
     {
         puedeCambiar = false;
         yield return new WaitForSeconds(0.1f);
+        
         bajoActivo = true;
         PuntoCamara.transform.SetParent(null);
         if (VictoriaGuitarra != null)
@@ -128,11 +170,20 @@ public class RadialMenu : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
         PuntoCamara.transform.position = VictoriaBajo.transform.position;
         Debug.Log("Sí se hizo");
+
+        /*
         yield return new WaitForSeconds(0.1f);
         arma.voltearDerecha();
         yield return new WaitForSeconds(0.1f);
-        arma.Guitarra.transform.localScale = arma.guitarraDerecha;
+        
         yield return new WaitForSeconds(1.5f);
+        */
+
+        yield return new WaitForSeconds(1f);
+        Destroy(fuegoBajo2);
+
+        yield return new WaitForSeconds(0.5f);
+        
         puedeCambiar = true;
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Activador : MonoBehaviour
 {
     public SistemaGuardado sistemaGuardado;
-
+    public GameObject microUI;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("ActDash"))
@@ -52,6 +52,7 @@ public class Activador : MonoBehaviour
         {
             sistemaGuardado.partida.Grappling = true;
             collision.gameObject.SetActive(false);
+            microUI.SetActive(true);
         }
     }
 }

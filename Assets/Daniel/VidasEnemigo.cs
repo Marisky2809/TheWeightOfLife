@@ -7,12 +7,17 @@ public class VidasEnemigo : MonoBehaviour
     [SerializeField] private int vidas;
     [SerializeField] private GameObject corazon;
     [SerializeField] private GameObject Calaco;
+    [SerializeField] private GameObject Golpeador;
     private SpriteRenderer spriteRenderer;
     float duration = 0.6f;
     private bool muerto = false;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        if(Golpeador != null)
+        {
+            spriteRenderer = Golpeador.GetComponent<SpriteRenderer>();
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -135,8 +140,14 @@ public class VidasEnemigo : MonoBehaviour
             GameObject nuevoCorazon = Instantiate(corazon);
             nuevoCorazon.transform.position = Calaco.transform.position;
         }
-      
         muerto = true;
+        if(Golpeador != null)
+        {
+            Calaco.transform.SetParent(null);
+            GameObject auxiliar = Calaco;
+            Calaco = Golpeador;
+            auxiliar.transform.SetParent(Calaco.transform);
+        }
         Collider2D cuerpo = Calaco.GetComponent<Collider2D>();
         Destroy(cuerpo);
         spriteRenderer.color = Color.black;

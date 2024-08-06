@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 22828a6fa088dc444b7fd2e323b3b582
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 454
+        width: 85
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c4416b422f29d41a8ec2ac90fe6c41
+      internalID: 97083646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 456
+        width: 81
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2f1b60d52d63d43bb8a47971da0cea
+      internalID: 1990006394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 454
+        width: 77
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c94957074306284e8582174274a171e
+      internalID: -1130714845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 453
+        width: 77
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0431399a58261fc42bfba41ec86bf8be
+      internalID: -229983333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 306
+        width: 77
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a72dca15feeab48ba9195370321077
+      internalID: -552276498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 306
+        width: 66
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b493dd1bdd4674b43ae62cc095d99c00
+      internalID: -159590932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 305
+        width: 77
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ee9d275c1d3d648b17ba8cb7cafae8
+      internalID: -596378521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 305
+        width: 70
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa4981c80cc54140b6632d126796dd0
+      internalID: -384925211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 154
+        width: 70
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c538169eaa55f9345be0fa0252cf58ee
+      internalID: 1933818906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 154
+        width: 63
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468247d9ec3341846a2f33d9f2ddc604
+      internalID: 346749451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 155
+        width: 51
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c965911205e6ead4fadc660799230884
+      internalID: -2138399266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 158
+        width: 45
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4fd142bcc9be448b26d2fe869b5ad1
+      internalID: 108379448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 7
+        width: 50
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe51594d2014ba4f82dacc71557ce05
+      internalID: -531647171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RH FUEGO2.2 150x150-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 5
+        width: 63
+        height: 90
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6bfdf467389e944ad2812fa3139953
+      internalID: 2048420006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RH FUEGO2.2 150x150-Sheet_0: 97083646
+      RH FUEGO2.2 150x150-Sheet_1: 1990006394
+      RH FUEGO2.2 150x150-Sheet_10: -596378521
+      RH FUEGO2.2 150x150-Sheet_11: -1197434146
+      RH FUEGO2.2 150x150-Sheet_12: -495962658
+      RH FUEGO2.2 150x150-Sheet_13: 650584635
+      RH FUEGO2.2 150x150-Sheet_14: -1990643052
+      RH FUEGO2.2 150x150-Sheet_15: 2021778751
+      RH FUEGO2.2 150x150-Sheet_16: -384925211
+      RH FUEGO2.2 150x150-Sheet_17: 1933818906
+      RH FUEGO2.2 150x150-Sheet_18: -613274600
+      RH FUEGO2.2 150x150-Sheet_19: -1725074690
+      RH FUEGO2.2 150x150-Sheet_2: -1122003280
+      RH FUEGO2.2 150x150-Sheet_20: 2138203716
+      RH FUEGO2.2 150x150-Sheet_21: -561432456
+      RH FUEGO2.2 150x150-Sheet_22: -1611033069
+      RH FUEGO2.2 150x150-Sheet_23: 346749451
+      RH FUEGO2.2 150x150-Sheet_24: -2138399266
+      RH FUEGO2.2 150x150-Sheet_25: 108379448
+      RH FUEGO2.2 150x150-Sheet_26: -531647171
+      RH FUEGO2.2 150x150-Sheet_27: 2048420006
+      RH FUEGO2.2 150x150-Sheet_3: -1130714845
+      RH FUEGO2.2 150x150-Sheet_4: -733907650
+      RH FUEGO2.2 150x150-Sheet_5: -229983333
+      RH FUEGO2.2 150x150-Sheet_6: -552276498
+      RH FUEGO2.2 150x150-Sheet_7: -159590932
+      RH FUEGO2.2 150x150-Sheet_8: -1820930456
+      RH FUEGO2.2 150x150-Sheet_9: -674065279
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
